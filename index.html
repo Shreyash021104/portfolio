@@ -3,6 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shreyash Patange — Backend Developer &amp; AI Engineer</title>
+<meta name="description" content="Portfolio of Shreyash Patange — Backend Developer &amp; AI Engineer building AI agents, autonomous SRE systems, and intelligent backends. Pune, India.">
+<meta property="og:title" content="Shreyash Patange — Backend Developer &amp; AI Engineer">
+<meta property="og:description" content="Building AI agents, autonomous SRE systems, and intelligent backends. Open to roles from Jul 2026.">
 <script src="./support.js"></script>
 </head>
 <body>
@@ -18,6 +22,19 @@
   a { color: inherit; }
   @keyframes blink { 0%,49%{opacity:1;} 50%,100%{opacity:0;} }
   @keyframes pulse-dot { 0%,100%{opacity:1;} 50%{opacity:0.4;} }
+  .nav-link { color: #6e7681; text-decoration: none; padding: 10px 18px; border-right: 1px solid #21262d; white-space: nowrap; font-family: 'IBM Plex Mono', monospace; font-size: 11px; display: inline-block; transition: color 0.15s; }
+  .nav-link:last-child { border-right: none; }
+  .nav-link:hover { color: #c9d1d9; }
+  @media (max-width: 768px) {
+    .rg-stack { grid-template-columns: 1fr !important; }
+    .rg-2col { grid-template-columns: 1fr 1fr !important; }
+    h1 { font-size: 52px !important; letter-spacing: -0.03em !important; }
+    h2 { font-size: 36px !important; }
+  }
+  @media (max-width: 480px) {
+    .rg-2col { grid-template-columns: 1fr !important; }
+    h1 { font-size: 40px !important; }
+  }
 </style>
 </helmet>
 
@@ -35,13 +52,23 @@
       <span style="color:#39d353; animation:blink 1s step-end infinite; margin-left:2px;">▋</span>
     </div>
     <div style="display:flex; gap:20px; color:#6e7681;">
-      <span>build: 2026.06</span>
+      <span>build: 2026.07</span>
       <span>·</span>
       <span>uptime: 22y</span>
       <span>·</span>
       <span style="color:#39d353;">● open to work</span>
     </div>
   </div>
+
+  <!-- Anchor nav -->
+  <nav style="display:flex; overflow-x:auto; -webkit-overflow-scrolling:touch; border-bottom:1px solid #21262d;">
+    <a href="#research" class="nav-link">research</a>
+    <a href="#experience" class="nav-link">experience</a>
+    <a href="#projects" class="nav-link">projects</a>
+    <a href="#skills" class="nav-link">stack</a>
+    <a href="#achievements" class="nav-link">achievements</a>
+    <a href="#contact" class="nav-link">contact</a>
+  </nav>
 
   <!-- Hero -->
   <section style="padding:80px 0 96px; position:relative;">
@@ -58,7 +85,7 @@
       <div style="font-family:'IBM Plex Sans',sans-serif; font-size:24px; color:#c9d1d9; font-weight:400;">Backend Developer &amp; AI Engineer</div>
     </div>
 
-    <div style="display:grid; grid-template-columns:1.5fr 1fr; gap:64px; align-items:start;">
+    <div class="rg-stack" style="display:grid; grid-template-columns:1.5fr 1fr; gap:64px; align-items:start;">
       <div>
         <p style="font-size:22px; line-height:1.55; color:#c9d1d9; margin:0 0 28px; max-width:640px; font-weight:300;">
           I build <span style="color:#f0f6fc; font-weight:500;">AI agents</span>, <span style="color:#f0f6fc; font-weight:500;">backend systems</span> and <span style="color:#f0f6fc; font-weight:500;">intelligent platforms</span>. Currently interning at Intangles — crafting autonomous SRE agents that cut on-call investigation from <span style="color:#39d353; font-family:'IBM Plex Mono',monospace; font-size:19px;">30min</span> → <span style="color:#39d353; font-family:'IBM Plex Mono',monospace; font-size:19px;">5min</span>.
@@ -109,7 +136,7 @@
     </div>
 
     <!-- Metric strip -->
-    <div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:1px; background:#21262d; margin-top:64px; border:1px solid #21262d;">
+    <div class="rg-2col" style="display:grid; grid-template-columns:repeat(4, 1fr); gap:1px; background:#21262d; margin-top:64px; border:1px solid #21262d;">
       <div style="background:#0d1117; padding:24px 28px;">
         <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; letter-spacing:0.1em; color:#6e7681; margin-bottom:10px;">// investigation.delta</div>
         <div style="font-family:'IBM Plex Sans',sans-serif; font-weight:600; font-size:44px; line-height:1; color:#39d353; letter-spacing:-0.02em;">6<span style="font-size:24px; color:#7ee787;">×</span></div>
@@ -127,14 +154,146 @@
       </div>
       <div style="background:#0d1117; padding:24px 28px;">
         <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; letter-spacing:0.1em; color:#6e7681; margin-bottom:10px;">// research.pub</div>
-        <div style="font-family:'IBM Plex Sans',sans-serif; font-weight:600; font-size:44px; line-height:1; color:#f0f6fc; letter-spacing:-0.02em;">1<span style="font-size:24px; color:#6e7681;"> IEEE</span></div>
+        <div style="font-family:'IBM Plex Sans',sans-serif; font-weight:600; font-size:44px; line-height:1; color:#f0f6fc; letter-spacing:-0.02em;">1<span style="font-size:24px; color:#6e7681;"> Springer</span></div>
         <div style="font-size:12px; color:#8b949e; margin-top:8px;">Springer LNNS · Scopus</div>
       </div>
     </div>
   </section>
 
+  <!-- Research & Open Source -->
+  <section id="research" style="padding:56px 0 88px; border-top:1px solid #21262d;">
+    <div style="display:flex; align-items:baseline; justify-content:space-between; margin-bottom:48px; padding-top:32px;">
+      <div>
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.08em; color:#39d353; margin-bottom:14px;">// section 00.5 · research.pub</div>
+        <h2 style="font-family:'IBM Plex Sans',sans-serif; font-weight:600; font-size:56px; line-height:1; letter-spacing:-0.035em; margin:0; color:#f0f6fc;">What I've researched.</h2>
+      </div>
+      <div style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:#6e7681;">1 paper · 1 concept · 1 OSS</div>
+    </div>
+
+    <!-- TOONS + Paper row -->
+    <div class="rg-stack" style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-bottom:20px;">
+
+      <!-- TOONS Card -->
+      <div style="background:linear-gradient(135deg, #0d1117 0%, #161b22 100%); border:1px solid #30363d; border-radius:8px; overflow:hidden; display:flex; flex-direction:column;">
+        <div style="padding:12px 20px; background:#010409; border-bottom:1px solid #21262d; font-family:'IBM Plex Mono',monospace; font-size:11px; color:#6e7681; display:flex; justify-content:space-between;">
+          <span><span style="color:#39d353;">●</span> toons · notation · research</span>
+          <span style="color:#f79e1b;">★ concept</span>
+        </div>
+        <div style="padding:32px; flex:1; display:flex; flex-direction:column;">
+          <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#6e7681; margin-bottom:14px;">// research.01</div>
+          <h3 style="font-family:'IBM Plex Sans',sans-serif; font-weight:700; font-size:38px; line-height:1; margin:0 0 6px; letter-spacing:-0.025em; color:#f0f6fc;">TOONS<span style="color:#39d353;">.</span></h3>
+          <div style="font-family:'IBM Plex Mono',monospace; font-size:12px; color:#39d353; margin-bottom:18px;">Token-Oriented Object Notation</div>
+          <p style="font-size:14px; line-height:1.7; color:#c9d1d9; margin:0 0 20px; flex:1;">
+            A structured serialization format engineered around LLM token economics. TOONS encodes agent reasoning traces, tool-call sequences, and structured outputs in a compact, token-efficient representation — cutting prompt overhead without sacrificing context fidelity. The key insight: treat <span style="color:#f0f6fc; font-weight:500;">tokens as a first-class resource</span>, not an afterthought.
+          </p>
+          <div style="background:#010409; border:1px solid #21262d; border-radius:4px; padding:16px; font-family:'IBM Plex Mono',monospace; font-size:11.5px; line-height:2; margin-bottom:20px;">
+            <div style="color:#6e7681; margin-bottom:8px;">▸ core.primitives</div>
+            <div><span style="color:#79c0ff;">@agent</span> <span style="color:#a5d6ff;">"tool_call"</span> <span style="color:#39d353;">→</span> <span style="color:#c9d1d9;">typed trace object</span></div>
+            <div><span style="color:#79c0ff;">@budget</span> <span style="color:#a5d6ff;">"context"</span> <span style="color:#39d353;">→</span> <span style="color:#c9d1d9;">compression hints</span></div>
+            <div><span style="color:#79c0ff;">@schema</span> <span style="color:#a5d6ff;">"output"</span> <span style="color:#39d353;">→</span> <span style="color:#c9d1d9;">type-safe generation</span></div>
+          </div>
+          <div style="display:flex; flex-wrap:wrap; gap:5px;">
+            <span style="white-space:nowrap; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:3px 8px; background:rgba(57,211,83,0.08); color:#7ee787; border:1px solid rgba(57,211,83,0.25); border-radius:3px;">Token Efficiency</span>
+            <span style="white-space:nowrap; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:3px 8px; background:#161b22; color:#8b949e; border:1px solid #30363d; border-radius:3px;">Agentic AI</span>
+            <span style="white-space:nowrap; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:3px 8px; background:#161b22; color:#8b949e; border:1px solid #30363d; border-radius:3px;">Serialization</span>
+            <span style="white-space:nowrap; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:3px 8px; background:#161b22; color:#8b949e; border:1px solid #30363d; border-radius:3px;">LLM Tooling</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Paper Card -->
+      <div style="background:#0d1117; border:1px solid #21262d; border-radius:8px; overflow:hidden; display:flex; flex-direction:column;">
+        <div style="padding:12px 20px; background:#010409; border-bottom:1px solid #21262d; font-family:'IBM Plex Mono',monospace; font-size:11px; color:#6e7681; display:flex; justify-content:space-between;">
+          <span><span style="color:#39d353;">●</span> peis-2026 · submitted</span>
+          <span style="color:#f79e1b;">under review</span>
+        </div>
+        <div style="padding:32px; flex:1; display:flex; flex-direction:column;">
+          <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#6e7681; margin-bottom:14px;">// research.02</div>
+          <h3 style="font-family:'IBM Plex Sans',sans-serif; font-weight:700; font-size:26px; line-height:1.15; margin:0 0 10px; letter-spacing:-0.02em; color:#f0f6fc;">Design and Implementation of Advanced Tool for Media Strategy and Planning</h3>
+          <div style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:#8b949e; margin-bottom:18px;">Patange S., Dave C., Pawar R., Vasekar S. · PEIS 2026</div>
+          <p style="font-size:13.5px; line-height:1.65; color:#c9d1d9; margin:0 0 20px; flex:1;">
+            AI-driven application that automates the complete media brief generation pipeline — combining Jina AI DeepSearch for real-time web-scale market research with LLaMA 3 70B (via Groq) for strategic synthesis. A dual-mode parsing engine (AI + regex fallback) guarantees 100% extraction success from unstructured web sources. Outputs 25+ structured sections — SWOT, competitor landscape, audience personas, channel budgets — across PPTX, PDF and DOCX in under 3 minutes.
+          </p>
+          <div style="background:#010409; border:1px solid #21262d; border-radius:4px; padding:16px; margin-bottom:20px;">
+            <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#6e7681; margin-bottom:12px;">▸ key.metrics</div>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px 16px; font-family:'IBM Plex Mono',monospace; font-size:11.5px;">
+              <div><span style="color:#39d353; font-size:15px; font-weight:600;">97%</span> <span style="color:#8b949e; display:block; font-size:10.5px;">time reduction</span></div>
+              <div><span style="color:#39d353; font-size:15px; font-weight:600;">100%</span> <span style="color:#8b949e; display:block; font-size:10.5px;">parse success rate</span></div>
+              <div><span style="color:#f0f6fc; font-size:15px; font-weight:600;">18</span> <span style="color:#8b949e; display:block; font-size:10.5px;">competitors identified</span></div>
+              <div><span style="color:#f0f6fc; font-size:15px; font-weight:600;">~178s</span> <span style="color:#8b949e; display:block; font-size:10.5px;">avg. execution time</span></div>
+            </div>
+          </div>
+          <div style="display:flex; flex-wrap:wrap; gap:5px;">
+            <span style="white-space:nowrap; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:3px 8px; background:rgba(57,211,83,0.08); color:#7ee787; border:1px solid rgba(57,211,83,0.25); border-radius:3px;">LLaMA 3 70B</span>
+            <span style="white-space:nowrap; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:3px 8px; background:#161b22; color:#8b949e; border:1px solid #30363d; border-radius:3px;">Jina DeepSearch</span>
+            <span style="white-space:nowrap; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:3px 8px; background:#161b22; color:#8b949e; border:1px solid #30363d; border-radius:3px;">FastAPI</span>
+            <span style="white-space:nowrap; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:3px 8px; background:#161b22; color:#8b949e; border:1px solid #30363d; border-radius:3px;">RAG</span>
+            <span style="white-space:nowrap; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:3px 8px; background:#161b22; color:#8b949e; border:1px solid #30363d; border-radius:3px;">Groq</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cognee.ai Card -->
+    <div style="background:#0d1117; border:1px solid #21262d; border-radius:8px; overflow:hidden;">
+      <div style="padding:12px 20px; background:#010409; border-bottom:1px solid #21262d; font-family:'IBM Plex Mono',monospace; font-size:11px; color:#6e7681; display:flex; justify-content:space-between;">
+        <span><span style="color:#39d353;">●</span> cognee.ai · exploring · memory-infra</span>
+        <a href="https://github.com/topoteretes/cognee" target="_blank" rel="noopener" style="color:#39d353; text-decoration:none;">↗ github.com/topoteretes/cognee</a>
+      </div>
+      <div class="rg-stack" style="padding:36px 40px; display:grid; grid-template-columns:1.3fr 1fr; gap:56px; align-items:start;">
+        <div>
+          <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#6e7681; margin-bottom:14px;">// open-source.explore</div>
+          <h3 style="font-family:'IBM Plex Sans',sans-serif; font-weight:700; font-size:44px; line-height:1; margin:0 0 8px; letter-spacing:-0.025em; color:#f0f6fc;">cognee<span style="color:#39d353;">.ai</span></h3>
+          <p style="font-size:15px; color:#8b949e; margin:0 0 18px; font-family:'IBM Plex Mono',monospace; font-size:13px;">Open-source memory infrastructure for AI agents</p>
+          <p style="font-size:14.5px; line-height:1.65; color:#c9d1d9; margin:0 0 22px; max-width:520px;">
+            Cognee solves the fundamental problem of <span style="color:#f0f6fc; font-weight:500;">AI agent amnesia</span>. It ingests unstructured data — documents, conversations, API responses — extracts entities and relationships, and builds a dynamic knowledge graph that agents can query across sessions. Instead of cramming raw context into every prompt, agents retrieve only the precise facts they need.
+          </p>
+          <p style="font-size:13.5px; line-height:1.65; color:#8b949e; margin:0 0 22px; max-width:520px;">
+            What makes it compelling for agentic systems: it combines a <b style="color:#c9d1d9;">vector index</b> for semantic similarity with a <b style="color:#c9d1d9;">graph store</b> for relational reasoning — so an agent can ask "what did we decide about auth last week?" and get a structurally accurate answer, not a hallucinated summary.
+          </p>
+          <div style="display:flex; flex-wrap:wrap; gap:5px;">
+            <span style="white-space:nowrap; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:3px 8px; background:rgba(57,211,83,0.08); color:#7ee787; border:1px solid rgba(57,211,83,0.25); border-radius:3px;">Python</span>
+            <span style="white-space:nowrap; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:3px 8px; background:#161b22; color:#8b949e; border:1px solid #30363d; border-radius:3px;">Knowledge Graphs</span>
+            <span style="white-space:nowrap; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:3px 8px; background:#161b22; color:#8b949e; border:1px solid #30363d; border-radius:3px;">Vector DBs</span>
+            <span style="white-space:nowrap; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:3px 8px; background:#161b22; color:#8b949e; border:1px solid #30363d; border-radius:3px;">Entity Extraction</span>
+            <span style="white-space:nowrap; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:3px 8px; background:#161b22; color:#8b949e; border:1px solid #30363d; border-radius:3px;">LangChain</span>
+            <span style="white-space:nowrap; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:3px 8px; background:#161b22; color:#8b949e; border:1px solid #30363d; border-radius:3px;">Qdrant</span>
+          </div>
+        </div>
+        <div style="background:#010409; border:1px solid #21262d; border-radius:6px; padding:20px; font-family:'IBM Plex Mono',monospace; font-size:11.5px;">
+          <div style="color:#6e7681; margin-bottom:14px;">▸ memory.pipeline</div>
+          <div style="display:flex; flex-direction:column; gap:4px;">
+            <div style="padding:10px 14px; background:#161b22; border-left:2px solid #39d353; border-radius:2px;">
+              <div style="color:#39d353; font-size:10px; letter-spacing:0.08em; margin-bottom:3px;">INGEST</div>
+              <div style="color:#c9d1d9;">docs · chats · API payloads</div>
+            </div>
+            <div style="text-align:center; color:#484f58; padding:4px 0; font-size:10px;">↓ chunk + embed</div>
+            <div style="padding:10px 14px; background:#161b22; border-left:2px solid #79c0ff; border-radius:2px;">
+              <div style="color:#79c0ff; font-size:10px; letter-spacing:0.08em; margin-bottom:3px;">EXTRACT</div>
+              <div style="color:#c9d1d9;">entities · relations · timestamps</div>
+            </div>
+            <div style="text-align:center; color:#484f58; padding:4px 0; font-size:10px;">↓ graph + vector store</div>
+            <div style="padding:10px 14px; background:#161b22; border-left:2px solid #f79e1b; border-radius:2px;">
+              <div style="color:#f79e1b; font-size:10px; letter-spacing:0.08em; margin-bottom:3px;">STORE</div>
+              <div style="color:#c9d1d9;">knowledge graph · Qdrant index</div>
+            </div>
+            <div style="text-align:center; color:#484f58; padding:4px 0; font-size:10px;">↓ semantic + relational query</div>
+            <div style="padding:10px 14px; background:#161b22; border-left:2px solid #a371f7; border-radius:2px;">
+              <div style="color:#a371f7; font-size:10px; letter-spacing:0.08em; margin-bottom:3px;">RETRIEVE</div>
+              <div style="color:#c9d1d9;">precise context for agent turns</div>
+            </div>
+          </div>
+          <div style="margin-top:16px; padding-top:14px; border-top:1px solid #21262d; display:flex; justify-content:space-between;">
+            <span style="color:#6e7681;">memory type</span>
+            <span style="color:#39d353;">persistent · queryable · typed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Experience -->
-  <section style="padding:56px 0 88px; border-top:1px solid #21262d;">
+  <section id="experience" style="padding:56px 0 88px; border-top:1px solid #21262d;">
     <div style="display:flex; align-items:baseline; justify-content:space-between; margin-bottom:56px; padding-top:32px;">
       <div>
         <div style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.08em; color:#39d353; margin-bottom:14px;">// section 01 · experience.log</div>
@@ -144,7 +303,7 @@
     </div>
 
     <!-- Job 1 -->
-    <div style="display:grid; grid-template-columns:220px 1fr; gap:56px; padding:32px 0; border-top:1px solid #21262d; align-items:start;">
+    <div class="rg-stack" style="display:grid; grid-template-columns:220px 1fr; gap:56px; padding:32px 0; border-top:1px solid #21262d; align-items:start;">
       <div style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:#8b949e; padding-top:8px;">
         <div style="display:inline-flex; align-items:center; gap:8px; padding:4px 10px; background:rgba(57,211,83,0.1); border:1px solid rgba(57,211,83,0.4); border-radius:3px; color:#39d353; margin-bottom:14px;">
           <span style="width:6px; height:6px; border-radius:50%; background:#39d353; animation:pulse-dot 2s ease-in-out infinite;"></span>
@@ -186,7 +345,7 @@
     </div>
 
     <!-- Job 2 -->
-    <div style="display:grid; grid-template-columns:220px 1fr; gap:56px; padding:32px 0; border-top:1px solid #21262d; align-items:start;">
+    <div class="rg-stack" style="display:grid; grid-template-columns:220px 1fr; gap:56px; padding:32px 0; border-top:1px solid #21262d; align-items:start;">
       <div style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:#8b949e; padding-top:8px;">
         <div style="margin-bottom:14px; font-size:11px; color:#6e7681;">━ completed</div>
         <div style="color:#c9d1d9;">Aug 2025 —</div>
@@ -238,7 +397,7 @@
   </section>
 
   <!-- Featured Projects -->
-  <section style="padding:56px 0 88px;">
+  <section id="projects" style="padding:56px 0 88px;">
     <div style="display:flex; align-items:baseline; justify-content:space-between; margin-bottom:48px;">
       <div>
         <div style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.08em; color:#39d353; margin-bottom:14px;">// section 02 · ~/projects</div>
@@ -253,7 +412,7 @@
         <span><span style="color:#39d353;">●</span> hush-agent · main · production</span>
         <span style="color:#f79e1b;">★ featured</span>
       </div>
-      <div style="padding:44px 48px; display:grid; grid-template-columns:1.3fr 1fr; gap:56px; align-items:start;">
+      <div class="rg-stack" style="padding:44px 48px; display:grid; grid-template-columns:1.3fr 1fr; gap:56px; align-items:start;">
         <div>
           <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#6e7681; margin-bottom:16px;">// project.01</div>
           <h3 style="font-family:'IBM Plex Sans',sans-serif; font-weight:700; font-size:64px; line-height:0.98; letter-spacing:-0.03em; margin:0 0 14px; color:#f0f6fc;">
@@ -311,7 +470,7 @@
     </div>
 
     <!-- Grid: CogniLearn + Market Analyzer -->
-    <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+    <div class="rg-stack" style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
       <!-- CogniLearn -->
       <div style="background:#0d1117; border:1px solid #21262d; border-radius:8px; overflow:hidden; display:flex; flex-direction:column;">
         <div style="padding:12px 20px; background:#010409; border-bottom:1px solid #21262d; font-family:'IBM Plex Mono',monospace; font-size:11px; color:#6e7681; display:flex; justify-content:space-between;">
@@ -400,7 +559,7 @@
         <span><span style="color:#39d353;">●</span> mediguide · main · published</span>
         <span style="color:#39d353;">↗ repo · ↗ paper</span>
       </div>
-      <div style="padding:36px 40px; display:grid; grid-template-columns:1.3fr 1fr; gap:56px; align-items:center;">
+      <div class="rg-stack" style="padding:36px 40px; display:grid; grid-template-columns:1.3fr 1fr; gap:56px; align-items:center;">
         <div>
           <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#6e7681; margin-bottom:14px;">// project.04</div>
           <h3 style="font-family:'IBM Plex Sans',sans-serif; font-weight:700; font-size:44px; line-height:1; margin:0 0 8px; letter-spacing:-0.025em; color:#f0f6fc;">MediGuide<span style="color:#39d353;">.</span></h3>
@@ -432,7 +591,7 @@
     <!-- Other projects -->
     <div style="margin-top:56px;">
       <div style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.08em; color:#6e7681; margin-bottom:20px;">// section 02.5 · also_in_the_repo/</div>
-      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px;">
+      <div class="rg-2col" style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:16px;">
         <div style="padding:20px 24px; background:#0d1117; border:1px solid #21262d; border-radius:6px;">
           <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#39d353; margin-bottom:10px;">$ genai · fitness</div>
           <div style="font-family:'IBM Plex Sans',sans-serif; font-size:22px; font-weight:600; margin-bottom:6px; color:#f0f6fc;">Fitlog</div>
@@ -453,7 +612,7 @@
   </section>
 
   <!-- Skills -->
-  <section style="padding:56px 0 88px; border-top:1px solid #21262d;">
+  <section id="skills" style="padding:56px 0 88px; border-top:1px solid #21262d;">
     <div style="display:flex; align-items:baseline; justify-content:space-between; margin-bottom:48px; padding-top:32px;">
       <div>
         <div style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.08em; color:#39d353; margin-bottom:14px;">// section 03 · stack.json</div>
@@ -461,7 +620,7 @@
       </div>
     </div>
 
-    <div style="display:grid; grid-template-columns:repeat(4, 1fr); gap:16px;">
+    <div class="rg-2col" style="display:grid; grid-template-columns:repeat(4, 1fr); gap:16px;">
 
       <div style="background:#0d1117; border:1px solid #21262d; border-radius:6px; padding:22px;">
         <div style="display:flex; justify-content:space-between; align-items:baseline; margin-bottom:16px;">
@@ -546,7 +705,7 @@
   </section>
 
   <!-- Achievements -->
-  <section style="padding:56px 0 88px; border-top:1px solid #21262d;">
+  <section id="achievements" style="padding:56px 0 88px; border-top:1px solid #21262d;">
     <div style="display:flex; align-items:baseline; justify-content:space-between; margin-bottom:48px; padding-top:32px;">
       <div>
         <div style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.08em; color:#39d353; margin-bottom:14px;">// section 04 · achievements</div>
@@ -554,7 +713,7 @@
       </div>
     </div>
 
-    <div style="display:grid; grid-template-columns:1.4fr 1fr; gap:40px;">
+    <div class="rg-stack" style="display:grid; grid-template-columns:1.4fr 1fr; gap:40px;">
       <div>
         <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.1em; color:#6e7681; margin-bottom:20px;">▸ ACHIEVEMENTS.LOG</div>
 
@@ -615,7 +774,7 @@
   </section>
 
   <!-- CTA -->
-  <section style="padding:80px 0 48px; border-top:1px solid #21262d;">
+  <section id="contact" style="padding:80px 0 48px; border-top:1px solid #21262d;">
     <div style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.08em; color:#39d353; margin-bottom:20px;">// section 05 · contact</div>
 
     <h2 style="font-family:'IBM Plex Sans',sans-serif; font-weight:600; font-size:80px; line-height:0.98; letter-spacing:-0.04em; margin:0 0 24px; color:#f0f6fc; max-width:960px;">
@@ -647,6 +806,20 @@
   </section>
 
 </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('[style*="display:grid"]').forEach(function(el) {
+      var cols = el.style.gridTemplateColumns || '';
+      if (!el.classList.contains('rg-stack') && !el.classList.contains('rg-2col')) {
+        if (cols.includes('repeat(4') || cols.includes('repeat(3') || cols.includes('1fr 1fr 1fr')) {
+          el.classList.add('rg-2col');
+        } else if (cols) {
+          el.classList.add('rg-stack');
+        }
+      }
+    });
+  });
+</script>
 </x-dc>
 <script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;:{&quot;width&quot;:1280,&quot;height&quot;:900}}"></script>
 </body>
