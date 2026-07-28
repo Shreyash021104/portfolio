@@ -403,7 +403,7 @@
         <div style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.08em; color:#39d353; margin-bottom:14px;">// section 02 · ~/projects</div>
         <h2 style="font-family:'IBM Plex Sans',sans-serif; font-weight:600; font-size:56px; line-height:1; letter-spacing:-0.035em; margin:0; color:#f0f6fc;">Things I've built.</h2>
       </div>
-      <div style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:#6e7681;">$ ls projects/ · 13 dirs</div>
+      <div style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:#6e7681;">$ ls projects/ · 17 dirs</div>
     </div>
 
     <!-- HUSH -->
@@ -592,7 +592,7 @@
     <div style="margin-top:56px;">
       <div style="display:flex; align-items:baseline; justify-content:space-between; margin-bottom:16px;">
         <div style="font-family:'IBM Plex Mono',monospace; font-size:11.5px; letter-spacing:0.08em; color:#39d353;">// section 02.5 · systems_portfolio/</div>
-        <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#6e7681;">6 systems · tests + CI + demos</div>
+        <div style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#6e7681;">10 systems · tests + CI + demos</div>
       </div>
       <p style="font-size:14.5px; line-height:1.6; color:#8b949e; margin:0 0 26px; max-width:760px;">
         Production-shaped backend &amp; distributed-systems builds — each with a real test suite, GitHub Actions CI, a recorded demo, and a deep-dive writeup. Built to interview depth, not tutorial depth.
@@ -735,6 +735,98 @@
             </div>
             <div style="margin-top:auto; padding-top:16px; border-top:1px solid #21262d;">
               <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#39d353;">▸ buffered, lossless ingest</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Job Queue -->
+        <div style="background:#0d1117; border:1px solid #21262d; border-radius:8px; overflow:hidden; display:flex; flex-direction:column;">
+          <div style="padding:11px 16px; background:#010409; border-bottom:1px solid #21262d; font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#6e7681; display:flex; justify-content:space-between; align-items:center;">
+            <span><span style="color:#39d353;">●</span> job-queue</span>
+            <span><a href="https://github.com/Shreyash021104/job-queue" target="_blank" rel="noopener" style="color:#39d353; text-decoration:none;">↗ code</a></span>
+          </div>
+          <div style="padding:24px; flex:1; display:flex; flex-direction:column;">
+            <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#6e7681; margin-bottom:12px;">// project.07</div>
+            <h3 style="font-family:'IBM Plex Sans',sans-serif; font-weight:700; font-size:25px; line-height:1.05; margin:0 0 6px; letter-spacing:-0.02em; color:#f0f6fc;">Job Queue Engine</h3>
+            <p style="font-size:13.5px; color:#8b949e; margin:0 0 14px;">A from-scratch Celery / Sidekiq.</p>
+            <p style="font-size:13px; line-height:1.6; color:#c9d1d9; margin:0 0 16px;">Background job system on Postgres — atomic <code style="font-family:'IBM Plex Mono',monospace; font-size:11px;">SKIP LOCKED</code> claiming (no double-processing), retries with backoff, heartbeat crash-recovery, and DAG workflows.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:5px; margin-bottom:18px;">
+              <span style="white-space:nowrap; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:3px 8px; background:rgba(57,211,83,0.1); color:#7ee787; border:1px solid rgba(57,211,83,0.3); border-radius:3px;">Python</span>
+              <span style="white-space:nowrap; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:3px 8px; background:#161b22; color:#8b949e; border:1px solid #30363d; border-radius:3px;">Postgres</span>
+              <span style="white-space:nowrap; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:3px 8px; background:#161b22; color:#8b949e; border:1px solid #30363d; border-radius:3px;">SKIP LOCKED</span>
+              <span style="white-space:nowrap; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:3px 8px; background:#161b22; color:#8b949e; border:1px solid #30363d; border-radius:3px;">FastAPI</span>
+            </div>
+            <div style="margin-top:auto; padding-top:16px; border-top:1px solid #21262d;">
+              <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#39d353;">▸ no double-processing; crash-safe</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI Agent -->
+        <div style="background:#0d1117; border:1px solid #21262d; border-radius:8px; overflow:hidden; display:flex; flex-direction:column;">
+          <div style="padding:11px 16px; background:#010409; border-bottom:1px solid #21262d; font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#6e7681; display:flex; justify-content:space-between; align-items:center;">
+            <span><span style="color:#39d353;">●</span> ai-agent</span>
+            <span><a href="https://github.com/Shreyash021104/ai-agent" target="_blank" rel="noopener" style="color:#39d353; text-decoration:none;">↗ code</a></span>
+          </div>
+          <div style="padding:24px; flex:1; display:flex; flex-direction:column;">
+            <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#6e7681; margin-bottom:12px;">// project.08</div>
+            <h3 style="font-family:'IBM Plex Sans',sans-serif; font-weight:700; font-size:25px; line-height:1.05; margin:0 0 6px; letter-spacing:-0.02em; color:#f0f6fc;">AI Agent</h3>
+            <p style="font-size:13.5px; color:#8b949e; margin:0 0 14px;">A hand-written tool-calling loop.</p>
+            <p style="font-size:13px; line-height:1.6; color:#c9d1d9; margin:0 0 16px;">An agent (no framework) that calls real tools — sandboxed code exec, scoped file I/O, web search — with long-term vector memory and failure guardrails (circuit breaker, limits).</p>
+            <div style="display:flex; flex-wrap:wrap; gap:5px; margin-bottom:18px;">
+              <span style="white-space:nowrap; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:3px 8px; background:rgba(57,211,83,0.1); color:#7ee787; border:1px solid rgba(57,211,83,0.3); border-radius:3px;">Python</span>
+              <span style="white-space:nowrap; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:3px 8px; background:#161b22; color:#8b949e; border:1px solid #30363d; border-radius:3px;">LLM · tool-calling</span>
+              <span style="white-space:nowrap; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:3px 8px; background:#161b22; color:#8b949e; border:1px solid #30363d; border-radius:3px;">Vector memory</span>
+              <span style="white-space:nowrap; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:3px 8px; background:#161b22; color:#8b949e; border:1px solid #30363d; border-radius:3px;">FastAPI</span>
+            </div>
+            <div style="margin-top:auto; padding-top:16px; border-top:1px solid #21262d;">
+              <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#39d353;">▸ recovers from tool failures</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Anomaly Detection -->
+        <div style="background:#0d1117; border:1px solid #21262d; border-radius:8px; overflow:hidden; display:flex; flex-direction:column;">
+          <div style="padding:11px 16px; background:#010409; border-bottom:1px solid #21262d; font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#6e7681; display:flex; justify-content:space-between; align-items:center;">
+            <span><span style="color:#39d353;">●</span> anomaly-detection</span>
+            <span><a href="https://github.com/Shreyash021104/anomaly-detection" target="_blank" rel="noopener" style="color:#39d353; text-decoration:none;">↗ code</a></span>
+          </div>
+          <div style="padding:24px; flex:1; display:flex; flex-direction:column;">
+            <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#6e7681; margin-bottom:12px;">// project.09</div>
+            <h3 style="font-family:'IBM Plex Sans',sans-serif; font-weight:700; font-size:25px; line-height:1.05; margin:0 0 6px; letter-spacing:-0.02em; color:#f0f6fc;">Anomaly Detection</h3>
+            <p style="font-size:13.5px; color:#8b949e; margin:0 0 14px;">Two detectors, measured against truth.</p>
+            <p style="font-size:13px; line-height:1.6; color:#c9d1d9; margin:0 0 16px;">Real-time time-series detection — rolling z-score vs Isolation Forest — compared by precision/recall against labeled ground truth, on a live streaming dashboard.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:5px; margin-bottom:18px;">
+              <span style="white-space:nowrap; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:3px 8px; background:rgba(57,211,83,0.1); color:#7ee787; border:1px solid rgba(57,211,83,0.3); border-radius:3px;">Python</span>
+              <span style="white-space:nowrap; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:3px 8px; background:#161b22; color:#8b949e; border:1px solid #30363d; border-radius:3px;">scikit-learn</span>
+              <span style="white-space:nowrap; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:3px 8px; background:#161b22; color:#8b949e; border:1px solid #30363d; border-radius:3px;">Redis Streams</span>
+              <span style="white-space:nowrap; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:3px 8px; background:#161b22; color:#8b949e; border:1px solid #30363d; border-radius:3px;">Postgres</span>
+            </div>
+            <div style="margin-top:auto; padding-top:16px; border-top:1px solid #21262d;">
+              <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#39d353;">▸ precision/recall measured</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- CI/CD Self-Healing -->
+        <div style="background:#0d1117; border:1px solid #21262d; border-radius:8px; overflow:hidden; display:flex; flex-direction:column;">
+          <div style="padding:11px 16px; background:#010409; border-bottom:1px solid #21262d; font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#6e7681; display:flex; justify-content:space-between; align-items:center;">
+            <span><span style="color:#39d353;">●</span> cicd-self-healing</span>
+            <span><a href="https://github.com/Shreyash021104/cicd-self-healing" target="_blank" rel="noopener" style="color:#39d353; text-decoration:none;">↗ code</a></span>
+          </div>
+          <div style="padding:24px; flex:1; display:flex; flex-direction:column;">
+            <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#6e7681; margin-bottom:12px;">// project.10</div>
+            <h3 style="font-family:'IBM Plex Sans',sans-serif; font-weight:700; font-size:25px; line-height:1.05; margin:0 0 6px; letter-spacing:-0.02em; color:#f0f6fc;">Self-Healing Deploys</h3>
+            <p style="font-size:13.5px; color:#8b949e; margin:0 0 14px;">A mini-Kubernetes rollout engine.</p>
+            <p style="font-size:13px; line-height:1.6; color:#c9d1d9; margin:0 0 16px;">A deployment controller: rolling updates gated on readiness probes, a post-deploy smoke test, automatic zero-downtime rollback, and self-healing of crashed replicas.</p>
+            <div style="display:flex; flex-wrap:wrap; gap:5px; margin-bottom:18px;">
+              <span style="white-space:nowrap; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:3px 8px; background:rgba(57,211,83,0.1); color:#7ee787; border:1px solid rgba(57,211,83,0.3); border-radius:3px;">Python</span>
+              <span style="white-space:nowrap; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:3px 8px; background:#161b22; color:#8b949e; border:1px solid #30363d; border-radius:3px;">CI/CD · DevOps</span>
+              <span style="white-space:nowrap; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:3px 8px; background:#161b22; color:#8b949e; border:1px solid #30363d; border-radius:3px;">GitHub Actions</span>
+              <span style="white-space:nowrap; font-family:'IBM Plex Mono',monospace; font-size:10.5px; padding:3px 8px; background:#161b22; color:#8b949e; border:1px solid #30363d; border-radius:3px;">FastAPI</span>
+            </div>
+            <div style="margin-top:auto; padding-top:16px; border-top:1px solid #21262d;">
+              <span style="font-family:'IBM Plex Mono',monospace; font-size:11px; color:#39d353;">▸ auto-rollback on failed health</span>
             </div>
           </div>
         </div>
