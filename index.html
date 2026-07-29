@@ -16,7 +16,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  html, body { margin: 0; padding: 0; background: #0d1117; }
+  html, body { margin: 0; padding: 0; background: #0d1117; overflow-x: hidden; }
+  *, *::before, *::after { box-sizing: border-box; }
   body { font-family: 'IBM Plex Sans', system-ui, -apple-system, sans-serif; color: #c9d1d9; font-weight: 400; -webkit-font-smoothing: antialiased; }
   ::selection { background: #39d353; color: #0d1117; }
   a { color: inherit; }
@@ -25,11 +26,21 @@
   .nav-link { color: #6e7681; text-decoration: none; padding: 10px 18px; border-right: 1px solid #21262d; white-space: nowrap; font-family: 'IBM Plex Mono', monospace; font-size: 11px; display: inline-block; transition: color 0.15s; }
   .nav-link:last-child { border-right: none; }
   .nav-link:hover { color: #c9d1d9; }
+  /* Repo/live links on project cards — proper, visible, tappable buttons. */
+  .repo-link { color: #39d353; text-decoration: none; font-family: 'IBM Plex Mono', monospace;
+    font-size: 12.5px; font-weight: 600; padding: 6px 10px; border: 1px solid rgba(57,211,83,0.28);
+    border-radius: 6px; display: inline-block; white-space: nowrap; transition: background 0.15s; }
+  .repo-link:hover { background: rgba(57,211,83,0.12); }
   @media (max-width: 768px) {
     .rg-stack { grid-template-columns: 1fr !important; }
     .rg-2col { grid-template-columns: 1fr 1fr !important; }
     h1 { font-size: 52px !important; letter-spacing: -0.03em !important; }
     h2 { font-size: 36px !important; }
+    /* Tighten the page gutters and stop the terminal bar from overflowing. */
+    .page { padding-left: 18px !important; padding-right: 18px !important; }
+    .topbar { flex-wrap: wrap !important; gap: 8px 12px !important; }
+    .topbar-meta { display: none !important; }   /* decorative build/uptime — hide on phones */
+    .repo-link { font-size: 13.5px; padding: 8px 12px; }  /* bigger tap target */
   }
   @media (max-width: 480px) {
     .rg-2col { grid-template-columns: 1fr !important; }
@@ -38,10 +49,10 @@
 </style>
 </helmet>
 
-<div style="max-width:1200px; margin:0 auto; padding:0 44px 96px; position:relative; background:#0d1117;">
+<div class="page" style="max-width:1200px; margin:0 auto; padding:0 44px 96px; position:relative; background:#0d1117;">
 
   <!-- Top nav bar (IDE-style) -->
-  <div style="display:flex; align-items:center; justify-content:space-between; padding:14px 0; border-bottom:1px solid #21262d; font-family:'IBM Plex Mono',monospace; font-size:11.5px;">
+  <div class="topbar" style="display:flex; align-items:center; justify-content:space-between; padding:14px 0; border-bottom:1px solid #21262d; font-family:'IBM Plex Mono',monospace; font-size:11.5px;">
     <div style="display:flex; align-items:center; gap:14px;">
       <div style="display:flex; gap:6px;">
         <span style="width:11px; height:11px; border-radius:50%; background:#ff5f56;"></span>
@@ -51,7 +62,7 @@
       <span style="color:#6e7681;">~/</span><span style="color:#c9d1d9;">shreyash-patange</span><span style="color:#39d353;"> $</span> <span style="color:#c9d1d9;">./portfolio --serve</span>
       <span style="color:#39d353; animation:blink 1s step-end infinite; margin-left:2px;">▋</span>
     </div>
-    <div style="display:flex; gap:20px; color:#6e7681;">
+    <div class="topbar-meta" style="display:flex; gap:20px; color:#6e7681;">
       <span>build: 2026.07</span>
       <span>·</span>
       <span>uptime: 22y</span>
@@ -604,7 +615,7 @@
         <div style="background:#0d1117; border:1px solid #21262d; border-radius:8px; overflow:hidden; display:flex; flex-direction:column;">
           <div style="padding:11px 16px; background:#010409; border-bottom:1px solid #21262d; font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#6e7681; display:flex; justify-content:space-between; align-items:center;">
             <span><span style="color:#39d353;">●</span> collab-doc-editor</span>
-            <span><a href="https://client-six-iota-77.vercel.app" target="_blank" rel="noopener" style="color:#39d353; text-decoration:none;">↗ live</a> · <a href="https://github.com/Shreyash021104/realtime-collab-doc-editor" target="_blank" rel="noopener" style="color:#39d353; text-decoration:none;">↗ code</a></span>
+            <span><a href="https://client-six-iota-77.vercel.app" target="_blank" rel="noopener" class="repo-link">↗ live</a> · <a href="https://github.com/Shreyash021104/realtime-collab-doc-editor" target="_blank" rel="noopener" class="repo-link">↗ code</a></span>
           </div>
           <div style="padding:24px; flex:1; display:flex; flex-direction:column;">
             <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#6e7681; margin-bottom:12px;">// project.01</div>
@@ -628,7 +639,7 @@
         <div style="background:#0d1117; border:1px solid #21262d; border-radius:8px; overflow:hidden; display:flex; flex-direction:column;">
           <div style="padding:11px 16px; background:#010409; border-bottom:1px solid #21262d; font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#6e7681; display:flex; justify-content:space-between; align-items:center;">
             <span><span style="color:#39d353;">●</span> rate-limiter-gateway</span>
-            <span><a href="https://rate-limiter-gateway-bgb7.onrender.com" target="_blank" rel="noopener" style="color:#39d353; text-decoration:none;">↗ live</a> · <a href="https://github.com/Shreyash021104/distributed-rate-limiter-gateway" target="_blank" rel="noopener" style="color:#39d353; text-decoration:none;">↗ code</a></span>
+            <span><a href="https://rate-limiter-gateway-bgb7.onrender.com" target="_blank" rel="noopener" class="repo-link">↗ live</a> · <a href="https://github.com/Shreyash021104/distributed-rate-limiter-gateway" target="_blank" rel="noopener" class="repo-link">↗ code</a></span>
           </div>
           <div style="padding:24px; flex:1; display:flex; flex-direction:column;">
             <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#6e7681; margin-bottom:12px;">// project.02</div>
@@ -651,7 +662,7 @@
         <div style="background:#0d1117; border:1px solid #21262d; border-radius:8px; overflow:hidden; display:flex; flex-direction:column;">
           <div style="padding:11px 16px; background:#010409; border-bottom:1px solid #21262d; font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#6e7681; display:flex; justify-content:space-between; align-items:center;">
             <span><span style="color:#39d353;">●</span> rag-codebase-qa</span>
-            <span><a href="https://github.com/Shreyash021104/rag-codebase-qa" target="_blank" rel="noopener" style="color:#39d353; text-decoration:none;">↗ code</a></span>
+            <span><a href="https://github.com/Shreyash021104/rag-codebase-qa" target="_blank" rel="noopener" class="repo-link">↗ code</a></span>
           </div>
           <div style="padding:24px; flex:1; display:flex; flex-direction:column;">
             <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#6e7681; margin-bottom:12px;">// project.03</div>
@@ -674,7 +685,7 @@
         <div style="background:#0d1117; border:1px solid #21262d; border-radius:8px; overflow:hidden; display:flex; flex-direction:column;">
           <div style="padding:11px 16px; background:#010409; border-bottom:1px solid #21262d; font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#6e7681; display:flex; justify-content:space-between; align-items:center;">
             <span><span style="color:#39d353;">●</span> event-driven-orders</span>
-            <span><a href="https://github.com/Shreyash021104/event-driven-order-processing" target="_blank" rel="noopener" style="color:#39d353; text-decoration:none;">↗ code</a></span>
+            <span><a href="https://github.com/Shreyash021104/event-driven-order-processing" target="_blank" rel="noopener" class="repo-link">↗ code</a></span>
           </div>
           <div style="padding:24px; flex:1; display:flex; flex-direction:column;">
             <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#6e7681; margin-bottom:12px;">// project.04</div>
@@ -697,7 +708,7 @@
         <div style="background:#0d1117; border:1px solid #21262d; border-radius:8px; overflow:hidden; display:flex; flex-direction:column;">
           <div style="padding:11px 16px; background:#010409; border-bottom:1px solid #21262d; font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#6e7681; display:flex; justify-content:space-between; align-items:center;">
             <span><span style="color:#39d353;">●</span> saas-starter</span>
-            <span><a href="https://github.com/Shreyash021104/saas-starter" target="_blank" rel="noopener" style="color:#39d353; text-decoration:none;">↗ code</a></span>
+            <span><a href="https://github.com/Shreyash021104/saas-starter" target="_blank" rel="noopener" class="repo-link">↗ code</a></span>
           </div>
           <div style="padding:24px; flex:1; display:flex; flex-direction:column;">
             <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#6e7681; margin-bottom:12px;">// project.05</div>
@@ -720,7 +731,7 @@
         <div style="background:#0d1117; border:1px solid #21262d; border-radius:8px; overflow:hidden; display:flex; flex-direction:column;">
           <div style="padding:11px 16px; background:#010409; border-bottom:1px solid #21262d; font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#6e7681; display:flex; justify-content:space-between; align-items:center;">
             <span><span style="color:#39d353;">●</span> log-observability</span>
-            <span><a href="https://github.com/Shreyash021104/log-observability" target="_blank" rel="noopener" style="color:#39d353; text-decoration:none;">↗ code</a></span>
+            <span><a href="https://github.com/Shreyash021104/log-observability" target="_blank" rel="noopener" class="repo-link">↗ code</a></span>
           </div>
           <div style="padding:24px; flex:1; display:flex; flex-direction:column;">
             <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#6e7681; margin-bottom:12px;">// project.06</div>
@@ -743,7 +754,7 @@
         <div style="background:#0d1117; border:1px solid #21262d; border-radius:8px; overflow:hidden; display:flex; flex-direction:column;">
           <div style="padding:11px 16px; background:#010409; border-bottom:1px solid #21262d; font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#6e7681; display:flex; justify-content:space-between; align-items:center;">
             <span><span style="color:#39d353;">●</span> job-queue</span>
-            <span><a href="https://github.com/Shreyash021104/job-queue" target="_blank" rel="noopener" style="color:#39d353; text-decoration:none;">↗ code</a></span>
+            <span><a href="https://github.com/Shreyash021104/job-queue" target="_blank" rel="noopener" class="repo-link">↗ code</a></span>
           </div>
           <div style="padding:24px; flex:1; display:flex; flex-direction:column;">
             <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#6e7681; margin-bottom:12px;">// project.07</div>
@@ -766,7 +777,7 @@
         <div style="background:#0d1117; border:1px solid #21262d; border-radius:8px; overflow:hidden; display:flex; flex-direction:column;">
           <div style="padding:11px 16px; background:#010409; border-bottom:1px solid #21262d; font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#6e7681; display:flex; justify-content:space-between; align-items:center;">
             <span><span style="color:#39d353;">●</span> ai-agent</span>
-            <span><a href="https://github.com/Shreyash021104/ai-agent" target="_blank" rel="noopener" style="color:#39d353; text-decoration:none;">↗ code</a></span>
+            <span><a href="https://github.com/Shreyash021104/ai-agent" target="_blank" rel="noopener" class="repo-link">↗ code</a></span>
           </div>
           <div style="padding:24px; flex:1; display:flex; flex-direction:column;">
             <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#6e7681; margin-bottom:12px;">// project.08</div>
@@ -789,7 +800,7 @@
         <div style="background:#0d1117; border:1px solid #21262d; border-radius:8px; overflow:hidden; display:flex; flex-direction:column;">
           <div style="padding:11px 16px; background:#010409; border-bottom:1px solid #21262d; font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#6e7681; display:flex; justify-content:space-between; align-items:center;">
             <span><span style="color:#39d353;">●</span> anomaly-detection</span>
-            <span><a href="https://github.com/Shreyash021104/anomaly-detection" target="_blank" rel="noopener" style="color:#39d353; text-decoration:none;">↗ code</a></span>
+            <span><a href="https://github.com/Shreyash021104/anomaly-detection" target="_blank" rel="noopener" class="repo-link">↗ code</a></span>
           </div>
           <div style="padding:24px; flex:1; display:flex; flex-direction:column;">
             <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#6e7681; margin-bottom:12px;">// project.09</div>
@@ -812,7 +823,7 @@
         <div style="background:#0d1117; border:1px solid #21262d; border-radius:8px; overflow:hidden; display:flex; flex-direction:column;">
           <div style="padding:11px 16px; background:#010409; border-bottom:1px solid #21262d; font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#6e7681; display:flex; justify-content:space-between; align-items:center;">
             <span><span style="color:#39d353;">●</span> cicd-self-healing</span>
-            <span><a href="https://github.com/Shreyash021104/cicd-self-healing" target="_blank" rel="noopener" style="color:#39d353; text-decoration:none;">↗ code</a></span>
+            <span><a href="https://github.com/Shreyash021104/cicd-self-healing" target="_blank" rel="noopener" class="repo-link">↗ code</a></span>
           </div>
           <div style="padding:24px; flex:1; display:flex; flex-direction:column;">
             <div style="font-family:'IBM Plex Mono',monospace; font-size:10.5px; color:#6e7681; margin-bottom:12px;">// project.10</div>
